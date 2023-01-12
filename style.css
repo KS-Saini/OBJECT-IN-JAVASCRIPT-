@@ -1,0 +1,22 @@
+html,
+body {
+  margin: auto;
+}
+
+/* THIS IS CANVAS STYLE*/
+/* canvas {
+         display: block;
+       margin-top: 20px;
+       margin-left: 165px;
+       margin-right: 90px;
+       margin-bottom: 20px;
+      } */
+
+/* NOW WE USE HTML CLASS TO GIVE STYLE */
+.saini {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(13, 28, 238);
+  font-weight: lighter;
+}
+

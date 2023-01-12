@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./lib/p5.dom.min.js"></script>
+  <script src="./lib/p5.js"></script>
+  <script src="./lib/p5.play.js"></script>
+  <script src="./lib/p5.sound.min.js"></script>
+  <script src="./lib/matter.js"></script>
+  <script src="./lib/matter.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>HTML,CSS AND JAVASCRIPT PRACTISE</title>
+  <!-- Sweet Alert c40 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="sweetalert.min.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="sweetalert.css" />
+  <!-- THIS LINK IMPORT THE SWEETALERT -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <div class="saini"> HELLO RAM RAM SAINI JI </div>
+
+  <script>
+    //  NOW WE LEARN ABOUT PRIMITIVE DATATYPE AND NON-PRIMITIVE DATATYPE OK
+    // let a = null;
+    // let b = 345;
+    // let c = true;
+    // let d = BigInt("500");
+    // let e = "kuldeep";
+    // let f = Symbol("nice good");
+    // let g = undefined;
+    //  console.log(a, b, c, d, e, f, g);
+    //  IF WE WANT TO CHECK WHAT IS DATATYPE ANY NUMBER IN CONSOLE THEN WRITE TYPEOF OK
+    // console.log(typeof d);
+
+    // NOW WE READ ABOUT OBJECT WHICH NON-PRIMITIVE DATATYPE OK!
+    const item = {
+      "king": 100,
+      "shub": false,
+      kkkk: 10,
+      sher: 20,
+      kuldeep: 14,
+      // ADDING A ARRAY OK
+      hobbies: ['TO DO CODING', 'TO DO STUDY'],
+      // ADDING A NEW OBJECT IN ALREADY MADE OBJECT
+      ram: {
+        'kuldeep': 'SHERA DA NHI AD DA'
+      },
+      // MAKING A FUNCTION IN OBJECT HOW
+      shyam: () => {
+        return 5000;
+      }
+    }
+
+    // OUTPUT OF THE FUNCTION MADE IN OBJECT OK!
+    console.log(item.shyam());
+
+    // WE CAN SEE OUTPUT OF OHTER OBJECT IN OBJECT OK
+    console.log(item.ram.kuldeep);
+
+    //NOW OUTPUTING AN ARRAY OK!
+    console.log(item.hobbies[1]);
+
+    // THIS DELETE VARIABLE IS USED FOR DELETE ANY OBJECT FROM NAMED OBJECT OK!
+    delete item.king;
+
+    // HOW TO ADD NEW VALUE IN OBJECT
+    item.email = 'KULDEEP SAINI KATARIYA TIGER';
+
+    // HOW TO CHANGE PROPERTY OF OBJECT WIHOUT INSIDE THE OBJECT OK!
+    item.king = '2000';
+
+    // NOW WE MAKING A PROPERTY IF ANY VALUE HAS IN ITEM THEN OUPUT 'TRUE' OTHERWISE 'FALSE'!
+    document.write('dheeraj' in item); // THE OUTPUT IS FALSE BECAUSE DHEERAJ ISN'T AVAILABLE
+
+    //NOW MAKING A BREAK TAG OK!
+    document.write('<br>');
+
+    // NOW WE MAKING A PROPERTY IF ANY VALUE HAS IN ITEM THEN OUPUT 'TRUE' OTHERWISE 'FALSE'!
+    document.write('kuldeep' in item); // THE OUTPUT IS TRUE BECAUSE DHEERAJ AVAILABLE 
+
+    // NOW WE GIVING FOR LOOP TO SHOW OUTPUT ALL AND THIS METHOND IS DIFFERENT OK!
+    for (let key in item) {
+      console.log(key + ':' + item[key]);
+    };
+
+    // THIS CONSOLE OUTPUTING ALL CODING OK 
+    console.log(item);
+
+    // DEFINATION OF THE OBJECT OK
+
+    // Objects in programming can be a combination of variables,
+    // functions, and data structures. This means that objects can store values,
+    // you can use objects to manipulate values and combine them into more complex objects,
+    // like arrays and still get all the benefits.
+
+  </script>
+
+</body>
+
+</html>
